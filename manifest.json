@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "BookmarkBump",
+  "version": "0.1.0",
+  "description": "Automatically move recently used bookmarks to the top of selected folders.",
+  "homepage_url": "https://github.com/tarosay/bookmark-bump",
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bookmark-bump@tarosay",
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "permissions": ["bookmarks", "menus", "storage", "webNavigation"],
+  "background": {
+    "scripts": ["src/reorder.js", "src/background.js"]
+  }
+}

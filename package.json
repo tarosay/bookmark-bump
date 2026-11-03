@@ -1,0 +1,10 @@
+{
+  "name": "bookmark-bump",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Automatically move recently used bookmarks to the top of selected folders.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
